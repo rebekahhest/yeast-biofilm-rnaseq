@@ -22,7 +22,7 @@ Pathway analysis can be performed using overrepresentation analysis (ORA) or gen
 
 ### Data Acquisition
 
-RNA-seq data were obtained from the NCBI BioProject PRJNA592304, which includes transcriptomic profiles of _Saccharomyces cerevisiae_ during early, thin, and mature biofilm (velum) development. Three biological replicates were available per developmental stage. Raw sequencing reads were downloaded from the Sequence Read Archive (SRA) using the SRA Toolkit (v3.2.1) (`prefetch` and `fasterq-dump`). The _Saccharomyces cerevisiae_ reference transcriptome (GCF_000146045.2_R64) was retrieved from the NCBI RefSeq database in FASTA format for transcript quantification. 
+RNA-seq data were obtained from the NCBI BioProject PRJNA592304, which includes transcriptomic profiles of _Saccharomyces cerevisiae_ during early, thin, and mature biofilm (velum) development. Three biological replicates were available per developmental stage. The _Saccharomyces cerevisiae_ reference transcriptome (GCF_000146045.2_R64) was retrieved from the NCBI RefSeq database in FASTA format for transcript quantification. 
 
 ### Quality Control
 
