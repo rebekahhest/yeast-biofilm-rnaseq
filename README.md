@@ -46,13 +46,33 @@ Gene Ontology (GO) enrichment analysis was performed using the clusterProfiler p
 
 Principal Component Analysis (PCA) revealed distinct clustering by condition (biofilm stage) where the two components retained explained 94% of the total variance (Figure 1). PC1 (67% variance) separated the early stage from the mature stage, while PC2 (26% variance) distinguished the thin intermediate stage. A total of 2022 differentially expressed genes (DEGs) were identified between the early and thin stages, 2374 DEGs between the thin and mature stages, and 2993 genes were significantly expressed between the early and mature stages (p-value < 0.05).
 
+![Figure 1](figures/Figure1_PCA.png)<br>
+**Figure 1. Principal component analysis (PCA) of transcriptomic profiles across early, thin, and mature biofilm stages.**
+Variance-stabilized transformed (VST) counts used for dimensionality reduction. Each point represents one biological replicate (n = 3 per stage). Samples cluster according to developmental stage and the two principal components explain 93% of the variance. 
+<br>
+
 #### Stage-Specific Differential Expression Patterns
 
-Comparative volcano plots further illustrated progressive transcriptional divergence across biofilm development stages (Figure 2). A threshold of at least two-fold changes in expression was applied following shrinkage which reduced the number of significant DEGs in each pairwise condition comparison. The comparison between early and thin stages identified 937 genes, with 485 upregulated and 453 downregulated. The thin versus mature contrast found 1091 genes above the threshold where 625 were upregulated and 466 downregulated. The most pronounced divergence was observed between early and mature stages containing 1716 genes in which 947 genes were upregulated and 769 genes were downregulated. Examining the top 20 significant DEGs revealed clear stage-specific expression patters, including distinct clusters of gene expression levels within stages and differing gene expression level groupings among stages (Figure 3).
-	
+Comparative volcano plots further illustrated progressive transcriptional divergence across biofilm development stages (Figure 2). A threshold of at least two-fold changes in expression was applied following shrinkage which reduced the number of significant DEGs in each pairwise condition comparison. The comparison between early and thin stages identified 937 genes, with 485 upregulated and 453 downregulated. The thin versus mature contrast found 1091 genes above the threshold where 625 were upregulated and 466 downregulated. The most pronounced divergence was observed between early and mature stages containing 1716 genes in which 947 genes were upregulated and 769 genes were downregulated. 
+
+![Figure 2](figures/Figure2_VolcanoPlots.png)<br>
+**Figure 2. Volcano plots of differential gene expression across pairwise biofilm stage comparisons.**
+Comparisons derived from shrunken log2 fold changes. Each point represents a gene with adjusted p-value < 0.05 and |log2FC| > 1 where red is upregulated, blue is downregulated, and gray represents non-significant genes.
+<br>
+
+Examining the top 20 significant DEGs revealed clear stage-specific expression patters, including distinct clusters of gene expression levels within stages and differing gene expression level groupings among stages (Figure 3).
+
+![Figure 3](figures/Figure3_Heatmap.png)<br>
+**Figure 3. Heatmap of the top 20 significantly differentially expressed genes in the mature vs early biofilm stage comparison.**
+Genes were ranked by adjusted p-value with Benjamini–Hochberg correction. Columns represent biological replicates grouped by developmental stage, and rows represent genes labeled by standard gene names. Hierarchical clustering evidenced across biofilm stages.
+
 #### Functional Enrichment Reveals Metabolic Reprogramming During Biofilm Maturation
 
 Over-representation (or enrichment) analysis (ORA) was performed and highlighted temporal reconstruction throughout development (Figure 4). The transition from early to thin biofilm stages yielded the largest the most functional reprogramming with 122 significant enriched Gene Ontology (GO) Biological Process (BP) terms (adjusted p-value <0.05). The dominant functions during initial biofilm establishment surround metabolic processes and energy production signalling substantial metabolic activation. The lowest enrichment occurred between the thin and mature stages with 22 GO terms where the functions were primarily related small metabolic processes, molecule biosynthesis, and cellular transport. The early-to-mature comparison identified 66 enriched processes that heavily overlapped with those observed in the pairwise transitions, including weak acid metabolic processes and transmembrane transport. 
+
+![Figure 4](figures/Figure4_Dotplots.png)<br>
+**Figure 4. Gene Ontology (GO) Biological Process (BP) enrichment across biofilm developmental transitions.**
+Significantly differentially expressed genes (adjusted p-value < 0.05 and |log2FC| > 1) relative to the full gene universe calculated by over-representation analysis (ORA). Dotplots display the top 15 enriched GO terms for each pairwise comparison where dot size represents gene count, and color indicates adjusted p-value with Benjamini–Hochberg correction.
 
 ### Discussion
 
